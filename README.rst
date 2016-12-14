@@ -1,12 +1,35 @@
 esseff
 ========================
 
-This is a structure template for Python command line applications, ready to be
-released and distributed via setuptools/PyPI/pip for Python 2 and 3.
+Esseff is a simple tool for management the deployment and versioning of AWS Step Functions
+(https://aws.amazon.com/step-functions/).
 
-Please have a look at the corresponding article:
-http://gehrcke.de/2014/02/distributing-a-python-command-line-application/
+You provide a directory containing .json (or .yaml) files for your state-machine
+definitions and some configuration, and it does the rest!
 
+
+Example
+-------
+
+    $ ls ~/my-project/state-machines
+    a-state-machine.yaml	esseff.config   some-state-machine.json     some-state-machine.config
+
+Contents of esseff.config (base config values for all machines in directory)::
+
+    [AWS]
+    # Will default to ~/.aws/credentials if omitted
+    aws_access_key_id = {some access key}
+    aws_secret_access_key = {some secret key}
+    region = us-west-2
+
+    [Machines]
+    # Default execution role for the state machines
+    execution-role-arn = arn:aws:iam::{some account}:role/service-role/StatesExecutionRole
+
+Contents of some-state-machine.config (overrides values in esseff.config)::
+
+    [Machines]
+    execution-role-arn = arn:aws:iam::{some account}:role/service-role/OtherExecutionRole
 
 Behavior
 --------
