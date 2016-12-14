@@ -8,6 +8,13 @@ You provide a directory containing .json (or .yaml) files for your state-machine
 definitions and some configuration, and it does the rest!
 
 
+DISCLAIMER
+***********
+
+I am not a python developer, by trade. Any and all pull requests to improve this tool are
+encouraged and welcome. Thanks!
+
+
 Versioning
 ----------
 
@@ -32,7 +39,7 @@ typically looks like this::
 Example Execution
 -----------------
 
-Contents of some state-machines folder::
+Contents of some state-machines folder prior to execution::
 
     $ ls ~/my-project/state-machines
     a-state-machine.yaml	esseff.config   some-state-machine.config     some-state-machine.json
