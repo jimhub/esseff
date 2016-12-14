@@ -220,6 +220,11 @@ def deploy_state_machines(path):
 
 def main():
 
+    if len(sys.argv) < 2:
+        print "Error! Directory containing state machine definitions and configuration required as first arg."
+        print "  Ex: esseff ~/project/state-machines"
+        sys.exit(1)
+
     state_machine_path = sys.argv[1]
 
     print
