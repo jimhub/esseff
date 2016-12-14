@@ -29,13 +29,13 @@ typically looks like this::
     }
 
 
-Example
--------
+Example Execution
+-----------------
 
 Contents of some state-machines folder::
 
     $ ls ~/my-project/state-machines
-    a-state-machine.yaml	esseff.config   some-state-machine.json     some-state-machine.config
+    a-state-machine.yaml	esseff.config   some-state-machine.config     some-state-machine.json
 
 Contents of esseff.config (base config values for all machines in directory)::
 
@@ -86,6 +86,12 @@ Executing esseff::
     -=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=-
 
     Esseff is finished. Have a nice day :D
+
+Contents of some state-machines folder after execution::
+
+    $ ls ~/my-project/state-machines
+    a-state-machine.yaml	a-state-machine.deploy  esseff.config   some-state-machine.config
+    some-state-machine.deploy   some-state-machine.json
 
 Behavior
 --------
