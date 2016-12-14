@@ -20,7 +20,7 @@ with open("README.rst", "rb") as f:
 
 
 setup(
-    name = "cmdline-esseff",
+    name = "esseff",
     packages = ["esseff"],
     entry_points = {
         "console_scripts": ['esseff = esseff.esseff:main']
