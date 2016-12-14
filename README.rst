@@ -52,7 +52,7 @@ For Linting Support
 Check if statelint installed::
 
     $ statelint
-    bash: esseff: command not found
+    bash: statelint: command not found
 
 If not, install via instructions found here (https://github.com/awslabs/statelint)::
 
