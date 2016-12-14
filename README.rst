@@ -9,7 +9,7 @@ definitions and some configuration, and it does the rest!
 
 
 DISCLAIMER
-***********
+----------
 
 I am not a python developer, by trade. Any and all pull requests to improve this tool are
 encouraged and welcome. Thanks!
