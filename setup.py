@@ -26,6 +26,10 @@ setup(
         "console_scripts": ['esseff = esseff.esseff:main']
         },
     version = version,
+    install_requires=[
+          'pyyaml',
+          'boto3'
+    ],
     description = "Python command line application for deploying and versioning AWS Step Function state machines.",
     long_description = long_descr,
     author = "James Liljenquist",
